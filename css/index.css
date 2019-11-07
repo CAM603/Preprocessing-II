@@ -144,7 +144,7 @@ h5 {
   font-family: 'Indie Flower', cursive;
 }
 h1 {
-  font-size: 4rem;
+  font-size: 5rem;
 }
 h2 {
   font-size: 3.2rem;
@@ -169,17 +169,32 @@ img {
   margin: 0 auto;
 }
 .navigation {
+  max-width: 800px;
+  margin: 2% auto;
   width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+.navigation .heading {
+  width: 50%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+.navigation .links {
+  width: 50%;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
   align-items: center;
 }
-.navigation .heading {
-  width: 50%;
-}
-.navigation .links {
-  width: 50%;
+.navigation .links a {
+  text-align: left;
+  font-size: 2rem;
+  text-decoration: none;
 }
 .footer {
   width: 100%;
