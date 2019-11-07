@@ -8,3 +8,15 @@
 	align-items: @a-items;
 }
 
+// Buttons
+.custom-button(@bg-color, @width, @color){
+    display: flex;
+    .layout();
+    background-color: @bg-color;
+    cursor: pointer;
+    width: @width;
+    height: 45px;
+    font-size: 2rem;
+    border-radius: 10px;
+    color: @color;
+}

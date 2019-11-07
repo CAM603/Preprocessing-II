@@ -60,6 +60,14 @@
     .destination {
       width: 30%;
       margin-bottom: 30px;
+      .btn{
+        .custom-button(@button-bg, 90%, white);
+        &:hover{
+          background-color: white;
+          color: @button-bg;
+        }
+      }
     }
   }
 }// home
+

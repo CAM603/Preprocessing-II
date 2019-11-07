@@ -168,6 +168,11 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+@media (max-width: 500px) {
+  .container {
+    width: 90%;
+  }
+}
 .navigation {
   width: 100%;
   padding: 3% 0;
@@ -286,4 +291,21 @@ img {
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+.home .content-pick .destination .btn {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: #17A2B8;
+  cursor: pointer;
+  width: 90%;
+  height: 45px;
+  font-size: 2rem;
+  border-radius: 10px;
+  color: white;
+}
+.home .content-pick .destination .btn:hover {
+  background-color: white;
+  color: #17A2B8;
 }
