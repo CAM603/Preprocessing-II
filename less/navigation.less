@@ -1,21 +1,33 @@
 // Navigation Styles here
 .navigation{
-    max-width: 800px;
-    margin: 2% auto;
     width: 100%;
+    padding: 3% 0;
+    border-bottom: 2px dashed @navigation-border;
     .layout();
-
+    .center{
+    width: 800px;
+    .layout(row wrap, space-evenly, center);
+    @media @mobile{
+        .layout(column wrap, center, center);
+    }
     .heading{
-        width: 50%;
-        .layout(row wrap, flex-start, center);
+        .layout();
+        @media @mobile{
+            width: 100%;
+            .layout(row wrap, center, center);
+        }
     } // End Heading
     .links{
-        width: 50%;
-        .layout(row wrap, space-around, center);
+        min-width: 50%;
+        .layout(row wrap, flex-left, center);
+        @media @mobile{
+            width: 100%;
+        }
         a{
-            text-align: left;
             font-size: 2rem;
+            margin: 0 auto;
             text-decoration: none;
         } // end a tag
     } // End Links
+    }
 } // End Navigation
