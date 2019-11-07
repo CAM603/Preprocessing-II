@@ -11,12 +11,19 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    @media @tablet{
+      .layout(row-reverse wrap, space-between, center);
+    }
     @media @mobile{
       .layout(column wrap, center, center);
     }
     .text-content {
       width: 48%;
       padding-right: 1%;
+      @media @tablet{
+        width: 100%;
+        margin-top: 2%;
+      }
       @media @mobile{
         width: 100%;
       }
@@ -25,6 +32,10 @@
     .img-content {
       width: 48%;
       padding-left: 1%;
+      @media @tablet{
+        .layout(row-reverse wrap, center, center);
+        width: 100%;
+      }
       @media @mobile{
         width: 100%;
       }
@@ -37,6 +48,9 @@
   .inverse-content {
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
+    @media @tablet{
+      flex-direction: row-reverse;
+    }
     @media @mobile{
       flex-direction: column-reverse;
     }
@@ -59,6 +73,7 @@
     }
     img {
       border-radius: 10px;
+      
     }
   }
 
@@ -67,6 +82,9 @@
     border-top: 2px dashed @navigation-border;
     display: flex;
     justify-content: space-between;
+    @media @tablet{
+      .layout(column wrap, center, center);
+    }
     @media @mobile{
       flex-flow: column wrap;
       align-items: center;
@@ -74,14 +92,18 @@
     .destination {
       width: 30%;
       margin-bottom: 30px;
+      @media @tablet{
+        width: 90%;
+      }
       @media @mobile{
         width: 80%;
       }
       .btn{
-        .custom-button(@button-bg, 90%, white);
+        .custom-button(@button-bg, 100%, white);
         &:hover{
-          background-color: white;
-          color: @button-bg;
+          background-color: lighten(@button-bg, 30%);
+          color: darken(white, 90%);
+          
         }
       }
     }
