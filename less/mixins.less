@@ -1,1 +1,10 @@
 // Mixins in here
+
+// Display Flex with Parameters
+.layout(@f-flow: row wrap, @j-content: center, @a-items: center){
+	display: flex;
+	flex-flow: @f-flow;
+	justify-content: @j-content;
+	align-items: @a-items;
+}
+
