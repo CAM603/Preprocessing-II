@@ -402,12 +402,82 @@ img {
   color: #191919;
 }
 .home .sign_up {
-  display: flex;
-  flex-flow: column wrap;
-  justify-content: space-between;
-  align-items: baseline;
+  width: 100%;
   font-family: 'Indie Flower', cursive;
   font-size: 2rem;
   color: #212529;
   line-height: 2;
+  font-weight: 800;
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+  grid-template-rows: 20% 20% 20% 20% 20%;
+}
+.home .sign_up .one {
+  grid-column-start: 1;
+}
+.home .sign_up .two {
+  grid-column-start: 3;
+  grid-column-end: 5;
+}
+.home .sign_up .three {
+  grid-column-start: 5;
+}
+.home .sign_up .four {
+  grid-row-start: 2;
+  grid-row-end: 4;
+  grid-column-start: 1;
+}
+.home .sign_up .five {
+  grid-row-start: 2;
+  grid-row-end: 4;
+  grid-column-start: 2;
+}
+.home .sign_up .six {
+  grid-row-start: 2;
+  grid-row-end: 4;
+  grid-column-start: 3;
+}
+.home .sign_up .seven {
+  grid-row-start: 2;
+  grid-row-end: 4;
+  grid-column-start: 4;
+}
+.home .sign_up .eight {
+  grid-row-start: 4;
+  grid-row-end: 5;
+  grid-column-start: 2;
+  grid-column-end: 4;
+}
+.home .sign_up .eight h3 {
+  text-align: center;
+}
+@media (max-width: 850px) {
+  .home .sign_up .eight h3 {
+    text-align: left;
+  }
+}
+.home .sign_up .nine {
+  grid-row-start: 5;
+  grid-column-start: 5;
+}
+.home .sign_up .nine button {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: #17A2B8;
+  cursor: pointer;
+  width: 15rem;
+  height: 45px;
+  font-size: 2rem;
+  border-radius: 10px;
+  color: #212529;
+}
+@media (max-width: 850px) {
+  .home .sign_up {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: stretch;
+    align-items: center;
+  }
 }

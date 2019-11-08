@@ -109,8 +109,64 @@
     }
   }
   .sign_up{
-    .layout(column wrap, space-between, baseline);
+    width: 100%;
     .fontStyle(@fancyFont, 2rem, @shark, 2);
+    font-weight: 800;
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: 20% 20% 20% 20% 20%;
+    .one{
+      grid-column-start: 1;
+    }
+    .two{
+      grid-column-start: 3;
+      grid-column-end: 5;
+    }
+    .three{
+      grid-column-start: 5;
+    }
+    .four{
+      grid-row-start: 2;
+      grid-row-end: 4;
+      grid-column-start: 1;
+    }
+    .five{
+      grid-row-start: 2;
+      grid-row-end: 4;
+      grid-column-start: 2;
+    }
+    .six{
+      grid-row-start: 2;
+      grid-row-end: 4;
+      grid-column-start: 3;
+    }
+    .seven{
+      grid-row-start: 2;
+      grid-row-end: 4;
+      grid-column-start: 4;
+    }
+    .eight{
+      grid-row-start: 4;
+      grid-row-end: 5;
+      grid-column-start: 2;
+      grid-column-end: 4;
+      h3{
+        text-align: center;
+        @media @tablet{
+          text-align: left;
+        }
+      }
+    }
+    .nine{
+      grid-row-start: 5;
+      grid-column-start: 5;
+      button{
+        .custom-button(@button-bg, 15rem, @shark);
+      }
+    }
+    @media @tablet{
+      .layout(column wrap, stretch, center);
+    }
   }
 }// home
 
