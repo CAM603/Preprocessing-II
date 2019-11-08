@@ -13,7 +13,8 @@
         background: white;
         width: 100%;
         max-width: 900px;
-        opacity: 50%;
+        opacity: .7;
+        z-index: 1;
         .layout(row wrap, space-between, center);
         position: fixed;
         .title{
@@ -30,12 +31,41 @@
             }
         }
     }
+    .review_box{
+        .layout();
+        margin-top: 5%;
+        @media @tablet{
+            flex-direction: column;
+            margin-top: 8%;
+        }
+        .review{
+            color: white;
+            width: 25%;
+            margin: 1%;
+            padding: 2%;
+            .layout();
+            @media @tablet{
+                width: 80%;
+                height: 30%;
+            }
+            h3{
+                font-size: 3rem;
+            }
+            p{
+                font-size: 1.7rem;
+                @media @mobile{
+                    font-size: 1.3rem;
+                }
+            }
+        }
+    }
 }
 .mtn-container{
     background-color: @eastern-blue;
     .layout(column wrap, center, center);
     width: 100%;
     header{
+        margin-top: 2%;
         text-align: center;
         max-width: 900px;
         width: 100%;
