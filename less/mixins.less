@@ -1,1 +1,42 @@
 // Mixins in here
+
+// Display Flex with Parameters
+.layout(@f-flow: row wrap, @j-content: center, @a-items: center){
+	display: flex;
+	flex-flow: @f-flow;
+	justify-content: @j-content;
+	align-items: @a-items;
+}
+
+// Buttons
+.custom-button(@bg-color, @width, @color){
+    display: flex;
+    .layout();
+    background-color: @bg-color;
+    cursor: pointer;
+    width: @width;
+    height: 45px;
+    font-size: 2rem;
+    border-radius: 10px;
+    color: @color;
+    transition: 500ms;
+}
+
+// Grow Animation
+
+.grow(@scale, @color){
+    -webkit-transform: @scale;
+    -ms-transform: @scale;
+    transform: @scale;
+    color: @color;
+    
+}
+
+// Font Stylin
+
+.fontStyle(@fam, @size, @color, @l-height){
+    font-family: @fam;
+    font-size: @size;
+    color: @color;
+    line-height: @l-height;
+}

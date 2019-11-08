@@ -1,0 +1,103 @@
+.mtn{
+    background-color: @shark;
+}
+.bg_img{
+    .layout(row wrap, center, flex-start);
+    width: 100%;
+    height: 60vh;
+    background-image: url("/img/mountain.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    .center{
+        background: white;
+        width: 100%;
+        max-width: 900px;
+        opacity: .7;
+        z-index: 1;
+        .layout(row wrap, space-between, center);
+        position: fixed;
+        .title{
+            .layout();
+            width: 50%;
+        }
+        nav{
+            .layout(row wrap, space-evenly, center);
+            width: 50%;
+            .fontStyle(@fancyFont, 2rem, @shark, 1);
+            a{
+                text-decoration: none;
+                font-weight: 800;
+            }
+        }
+    }
+    .review_box{
+        .layout();
+        margin-top: 5%;
+        @media @tablet{
+            flex-direction: column;
+            margin-top: 8%;
+        }
+        .review{
+            color: white;
+            width: 25%;
+            margin: 1%;
+            padding: 2%;
+            .layout();
+            @media @tablet{
+                width: 80%;
+                height: 30%;
+            }
+            h3{
+                font-size: 3rem;
+            }
+            p{
+                font-size: 1.7rem;
+                @media @mobile{
+                    font-size: 1.3rem;
+                }
+            }
+        }
+    }
+}
+.mtn-container{
+    background-color: @eastern-blue;
+    .layout(column wrap, center, center);
+    width: 100%;
+    header{
+        margin-top: 2%;
+        text-align: center;
+        max-width: 900px;
+        width: 100%;
+    }
+    .pics{
+        width: 100%;
+        max-width: 900px;
+        margin-bottom: 5%;
+        .layout();
+        .img1{
+            width: 100% / 3;
+            background-image: url("/img/fire.jpg");
+            padding: 150px;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center bottom;
+        }
+        .img2{
+            width: 100% / 3;
+            background-image: url("/img/hike.jpg");
+            padding: 150px;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .img3{
+            width: 100% / 3;
+            background-image: url("/img/cookout.jpg");
+            padding: 150px;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+    }
+
+}
