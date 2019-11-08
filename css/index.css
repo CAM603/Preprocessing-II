@@ -402,6 +402,9 @@ img {
   background-color: #7adeee;
   color: #191919;
 }
+.home .content-pick .destination .btn a {
+  text-decoration: none;
+}
 .home .sign_up {
   width: 100%;
   font-family: 'Indie Flower', cursive;
