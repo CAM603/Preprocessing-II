@@ -162,6 +162,10 @@
       grid-column-start: 5;
       button{
         .custom-button(@button-bg, 15rem, @shark);
+        &:hover{
+          color: white;
+          background-color: lighten(@button-bg, 20%);
+        }
       }
     }
     @media @tablet{

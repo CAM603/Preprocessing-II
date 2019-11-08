@@ -396,6 +396,7 @@ img {
   font-size: 2rem;
   border-radius: 10px;
   color: white;
+  transition: 500ms;
 }
 .home .content-pick .destination .btn:hover {
   background-color: #7adeee;
@@ -472,6 +473,11 @@ img {
   font-size: 2rem;
   border-radius: 10px;
   color: #212529;
+  transition: 500ms;
+}
+.home .sign_up .nine button:hover {
+  color: white;
+  background-color: #4cd3e9;
 }
 @media (max-width: 850px) {
   .home .sign_up {
